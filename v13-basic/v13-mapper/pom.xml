@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <!-- -5 需要重先调整 指定版本  才能解决mysql依赖的问题
+         解决mapper.xml中 http://mybatis.org/dtd/mybatis-3-mapper.dtd"报红的问题
+         将demo中的复制过来  同时保留自己相关代码-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <artifactId>v13-mapper</artifactId>
+    <groupId>com.qf</groupId>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--原先的-->
+    <!-- <parent>
+        <artifactId>v13-basic</artifactId>
+        <groupId>com.qf</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>v13-mapper</artifactId>-->
+
+
+    <dependencies>
+        <!-- -4引入mybatis-spring 依赖-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
+
+            <!--采用alibaba连接池1  先消除SpringBoot的默认连接池-->
+            <!--<exclusions>
+                <exclusion>
+                    <artifactId>HikariCP</artifactId>
+                    <groupId>com.zaxxer</groupId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+
+        <!--采用alibaba连接池2  引入alibaba 连接池依赖-->
+       <!-- <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>-->
+
+        <!-- -4 引入mysql依赖-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!---3 引入entity依赖-->
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>v13-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--引入common依赖  mapper是要继承IBaseDao来实现CRUD的-->
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>v13-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+    <!--由于mapper.xml文件放在独立的工程，所以需要在pom.xml中引入  不然在发布商品 会出现找不到方法的异常错误-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
+</project>

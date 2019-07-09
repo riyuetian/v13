@@ -1,0 +1,14 @@
+server:
+  port: 9095
+
+dubbo:
+  application:
+    name: center-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.199.129:2181
+
+
+spring:
+  thymeleaf:
+    cache: false

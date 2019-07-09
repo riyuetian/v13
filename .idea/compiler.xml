@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="miaosha" />
+        <module name="temp-httpclient" />
+        <module name="temp-jedis" />
+        <module name="temp-jwt" />
+        <module name="temp-rabbitmq-new" />
+        <module name="temp-springboot-rabbitmq" />
+        <module name="temp-springboot-redis" />
+        <module name="temp-time" />
+        <module name="temp-timer" />
+        <module name="temp-zookeeper" />
+        <module name="v13-cart-api" />
+        <module name="v13-cart-service" />
+        <module name="v13-cart-web" />
+        <module name="v13-center-web" />
+        <module name="v13-common" />
+        <module name="v13-common-api" />
+        <module name="v13-common-service" />
+        <module name="v13-entity" />
+        <module name="v13-index-web" />
+        <module name="v13-item-web" />
+        <module name="v13-mapper" />
+        <module name="v13-order-web" />
+        <module name="v13-product-api" />
+        <module name="v13-product-service" />
+        <module name="v13-register-web" />
+        <module name="v13-search-api" />
+        <module name="v13-search-service" />
+        <module name="v13-search-web" />
+        <module name="v13-service" />
+        <module name="v13-sso-web" />
+        <module name="v13-user-api" />
+        <module name="v13-user-service" />
+        <module name="v13-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="miaosha" target="1.8" />
+      <module name="temp-httpclient" target="1.8" />
+      <module name="temp-jedis" target="1.8" />
+      <module name="temp-jwt" target="1.8" />
+      <module name="temp-rabbitmq-new" target="1.8" />
+      <module name="temp-spring-rabbitmq" target="1.8" />
+      <module name="temp-springboot-rabbitmq" target="1.8" />
+      <module name="temp-springboot-redis" target="1.8" />
+      <module name="temp-time" target="1.8" />
+      <module name="temp-timer" target="1.8" />
+      <module name="temp-zookeeper" target="1.8" />
+      <module name="v13" target="1.8" />
+      <module name="v13-api" target="1.8" />
+      <module name="v13-basic" target="1.8" />
+      <module name="v13-cart-api" target="1.8" />
+      <module name="v13-cart-service" target="1.8" />
+      <module name="v13-cart-web" target="1.8" />
+      <module name="v13-center-web" target="1.8" />
+      <module name="v13-common" target="1.8" />
+      <module name="v13-common-api" target="1.8" />
+      <module name="v13-common-service" target="1.8" />
+      <module name="v13-common-web" target="1.8" />
+      <module name="v13-entity" target="1.8" />
+      <module name="v13-index-web" target="1.8" />
+      <module name="v13-item-web" target="1.8" />
+      <module name="v13-mapper" target="1.8" />
+      <module name="v13-order-web" target="1.8" />
+      <module name="v13-product-api" target="1.8" />
+      <module name="v13-product-service" target="1.8" />
+      <module name="v13-register-web" target="1.8" />
+      <module name="v13-search-api" target="1.8" />
+      <module name="v13-search-service" target="1.8" />
+      <module name="v13-search-web" target="1.8" />
+      <module name="v13-service" target="1.8" />
+      <module name="v13-sso-web" target="1.8" />
+      <module name="v13-temp" target="1.8" />
+      <module name="v13-user-api" target="1.8" />
+      <module name="v13-user-service" target="1.8" />
+      <module name="v13-web" target="1.8" />
+      <module name="v13temp" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+  </component>
+</project>

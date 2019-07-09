@@ -1,0 +1,16 @@
+#\u4E3A\u5546\u54C1\u9996\u9875 \u914D\u7F6E\u72EC\u7ACB\u7684\u7AEF\u53E3
+server:
+  port: 9093
+
+#\u914D\u5408\u7ACB\u5373\u52A0\u8F7D
+spring:
+  thymeleaf:
+    cache: false
+
+#\u914D\u5408dubbo  \u91CD\u547D\u540D
+dubbo:
+  application:
+    name: item-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.199.129:2181

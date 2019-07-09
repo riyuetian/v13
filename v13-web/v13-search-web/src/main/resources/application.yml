@@ -1,0 +1,24 @@
+#\u641C\u7D22\u5DE5\u7A0B-2  \u914D\u7F6E\u4FE1\u606F  \u524D\u4E00\u6B65 \u4F9D\u8D56
+
+#\u4E3A\u641C\u7D22\u670D\u52A1 \u914D\u7F6E\u72EC\u7ACB\u7684\u7AEF\u53E3
+server:
+  port: 9092
+
+#\u914D\u7F6E\u7ACB\u5373\u52A0\u8F7D
+spring:
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.199.129
+    port: 5672
+    virtual-host: /fang
+    username: fang
+    password: 123
+
+#\u914D\u5408dubbo  \u91CD\u547D\u540D
+dubbo:
+  application:
+    name: serach-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.199.129:2181
